@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.CSS">
+</head>
+<!-- using css media querry -->
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: inline;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: rgb(174, 30, 30);
+    }
+    
+    /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+    /* styling image */
+    img :hover{
+        motion-rotation: reverse;
+    }
+    </style>
+<body>
+    <!-- flexbox -->
+    <header><h1>Sample flexbox</h1></header>
+    <section>
+        
+        <article class="flex-container"><button>smile</button><button>laugh</button><button>wink</button><button>blush</button><button>shrug</button><h2>Article one</h2><p>tfghugdsgrfggyuihgfsasfgvcxsegjkjvdssdhhvcxsdgvcdddggfssdgfgfgddfdsxcfffd</p></article> 
+        <article class="flex-container"><h2>Article two</h2><p>tfghugdsgrfggyuihgfsasfgvcxsegjkjvdssdhhvcxsdgvcdddggfssdgfgfgddfdsxcfffd</p></article> 
+        <article class="flex-container"><h2>Article three</h2><p>tfghugdsgrfggyuihgfsasfgvcxsegjkjvdsdhhvcxsdgvcdddggfssdgfgfgddfdsxcfffd</p></article>
+    </section> 
+    <!-- using grid -->
+    <div class="container">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="five">six</div>
+
+        
+    </div>
+    <!-- CSS MEDIA QUERRIES -->
+    <h2>Responsive navigation menu</h2>
+<p>Resize the browser window to see the effect: When the screen is less than 600px, the navigation menu will be displayed vertically instead of horizontally.</p>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  </div>
+  <div>
+  <img src="https://images.pexels.com/photos/236259/pexels-photo-236259.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+  <figcaption>Girls love roses</figcaption>
+</div>
+</body>
+</html>
